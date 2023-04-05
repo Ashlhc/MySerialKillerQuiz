@@ -1,0 +1,65 @@
+
+:root {
+    font-family: Arial;
+    margin: 10px;
+    display: flex;
+    flex-direction: center;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: aquamarine;
+  }
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100px;
+    min-width: 100%;
+    background-color: aquamarine;
+  }
+  title {
+    font-size: x-large;
+    text-align: center;
+  }
+  header,head {
+    padding: 40px;
+    text-align: center;
+    background: darkgreen;
+    color: aquamarine;
+  }
+  
+  nav {
+    display: flex;
+    background-color: darkgreen;
+  }
+  
+  nav h1 {
+    color: #13293d;
+    text-decoration: none;
+    text-align:left;
+  }
+  nav h2 {
+    color: #13293d;
+    padding: 0px 0px 0px 1550px;
+    text-decoration: none;
+    text-align: right;
+  }
+  main {
+    display: flex;
+    flex-direction: center;
+    background-color: darkgreen;
+    width: 100%;
+    min-height: 80%;
+  }
+  .quiz {
+    background-color: aquamarine;
+    display: contents;
+    width: 80%;
+    min-height: 60%;
+  }
+  .timer {
+    background-color: aquamarine;
+    color: darkgreen;
+    text-size-adjust: 300px;
+  }
+  .counter {
+    color:aquamarine;
+    font-size: 100px;
+  }
