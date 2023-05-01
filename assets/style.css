@@ -1,65 +1,198 @@
 
 :root {
-    font-family: Arial;
-    margin: 10px;
-    display: flex;
-    flex-direction: center;
-    min-height: 100vh;
-    justify-content: flex-start;
-    background-color: aquamarine;
+  --primary: aquamarine;
+  --light: darkgreen;
+  --secondary: aquamarine;
+  --button: darkgreen;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+title {
+  background-color: var(--secondary);
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  color:var(--light);
+  font-size: 200%;
+  font-weight:bolder;
+  width:275px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+header {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  color: var(--light);
+}
+#scores-link,
+#timer {
+  font-size: 175%;
+  width: 250px;
+  text-align: center;
+}
+
+#scores-link:hover {
+  color: var(--button);
+}
+
+body {
+  background-color: var(--light);
+}
+
+section {
+  width: 60%;
+  background-color: var(--secondary);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 75px;
+  margin: 75px;
+  border-radius: 50px;
+}
+
+#info {
+  padding: 10px;
+}
+
+#assessment {
+  padding-top: 15px;
+}
+
+#start {
+  width: 100px;
+  height: 60px;
+  margin: 20px;
+}
+
+#start,
+li,
+.submitBtn {
+  background-color: var(--button);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+}
+
+ul {
+  width: 50%;
+}
+
+li {
+  padding: 25px;
+  margin: 20px;
+  list-style-type: none;
+  border-radius: 25px;
+  text-align: center;
+  color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+form input:first-child {
+  padding: 15px;
+  background-color: white;
+  border: 2px inset var(--secondary);
+  margin-bottom: 10px;
+}
+
+.submitBtn {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+tr {
+  border-bottom: 2px solid black;
+  padding: 5px 0;
+}
+
+tr:hover {
+  background: purple;
+}
+
+td {
+  font-size: 130%;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+td:first-child {
+  font-size: 150%;
+}
+
+.wrong {
+  background-color: red;
+  animation: .1s shake linear;
+}
+
+.correct {
+  background-color: rgb(11, 134, 11);
+  animation: .25s pop linear;
+}
+
+@keyframes shake {
+  0% {
+      transform: translateX(-3px);
   }
-  button {
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100px;
-    min-width: 100%;
-    background-color: aquamarine;
+  20% {
+      transform: translateX(0px);
   }
-  title {
-    font-size: x-large;
-    text-align: center;
+  60% {
+      transform: translateX(3px);
   }
-  header,head {
-    padding: 40px;
-    text-align: center;
-    background: darkgreen;
-    color: aquamarine;
+  80% {
+      transform: translateX(0px);
   }
-  
-  nav {
-    display: flex;
-    background-color: darkgreen;
+  100% {
+      transform: translateX(-3px);
   }
-  
-  nav h1 {
-    color: #13293d;
-    text-decoration: none;
-    text-align:left;
+}
+
+@keyframes pop {
+  0% {
+      transform: scale(1.0);
   }
-  nav h2 {
-    color: #13293d;
-    padding: 0px 0px 0px 1550px;
-    text-decoration: none;
-    text-align: right;
+  50% {
+      transform: scale(1.05);
   }
-  main {
-    display: flex;
-    flex-direction: center;
-    background-color: darkgreen;
-    width: 100%;
-    min-height: 80%;
+  100% {
+      transform: scale(1.0);
   }
-  .quiz {
-    background-color: aquamarine;
-    display: contents;
-    width: 80%;
-    min-height: 60%;
+}
+
+/*
+* PHONE USAGE STYLING
+*/
+
+@media screen and (max-width:992px) {
+  section {
+      width: 90%;
   }
-  .timer {
-    background-color: aquamarine;
-    color: darkgreen;
-    text-size-adjust: 300px;
+  ul {
+      width: 90%;
   }
-  .counter {
-    color:aquamarine;
-    font-size: 100px;
-  }
+}

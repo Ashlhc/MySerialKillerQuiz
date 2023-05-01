@@ -1,88 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
-
-<header>
-    <div id="title">
-    <title>Serial Killer Facts Quiz</title>
-    </div>
-<!--FIRST PAGE-->
-<!-- container for high scores in top left-->
-<!--container for the countdown timer top right-->
-    <nav>
-        <ul>
-            <h1>View high scores</h1>
-            <h2>Time Remaining</h2>
-        </ul>
-        <div id="timer">
-            <div id="counter">70</div>
-        </div>
-    </nav>
-</header>
-<!-- short description of the quiz with a start button under it but centered of the screen  -->
 <body>
-    <div id="container">
-        <button id="btn">Start Quiz</button>
-</div>
 
-<!--PAGES 2- FOR QUESTIONS-->
-<!--container for the quiz itself centered on the page-->
-<!-- container with the question-->
-<!-- clickable buttons for the 4 guesses -->
-<main>
-<div id="quiz" class="card">
-    <div class="questions">
-        <div class="question1"></div>
-            <button class="answers" id="1" onclick="checkAnswer('1')"></button>
-            <button class="answers" id="2" onclick="checkAnswer('2')"></button>
-            <button class="answers" id="3" onclick="checkAnswer('3')"></button>
-            <button class="answers" id="4" onclick="checkAnswer('4')"></button>
-        <div class="question2"></div>
-            <button class="answers" id="1" onclick="checkAnswer('1')"></button>
-            <button class="answers" id="2" onclick="checkAnswer('2')"></button>
-            <button class="answers" id="3" onclick="checkAnswer('3')"></button>
-            <button class="answers" id="4" onclick="checkAnswer('4')"></button>
-        <div class="question3"></div>
-            <button class="answers" id="1" onclick="checkAnswer('1')"></button>
-            <button class="answers" id="2" onclick="checkAnswer('2')"></button>
-            <button class="answers" id="3" onclick="checkAnswer('3')"></button>
-            <button class="answers" id="4" onclick="checkAnswer('4')"></button>
-        <div class="question4"></div>
-            <button class="answers" id="1" onclick="checkAnswer('1')"></button>
-            <button class="answers" id="2" onclick="checkAnswer('2')"></button>
-            <button class="answers" id="3" onclick="checkAnswer('3')"></button>
-            <button class="answers" id="4" onclick="checkAnswer('4')"></button>
-        <div class="question5"></div>
-            <button class="answers" id="1" onclick="checkAnswer('1')"></button>
-            <button class="answers" id="2" onclick="checkAnswer('2')"></button>
-            <button class="answers" id="3" onclick="checkAnswer('3')"></button>
-            <button class="answers" id="4" onclick="checkAnswer('4')"></button>
-    </div>
-    <div class="choice">
-        <button class="answers" id="1" onclick="checkAnswer('1')"></button>
-        <button class="answers" id="2" onclick="checkAnswer('2')"></button>
-        <button class="answers" id="3" onclick="checkAnswer('3')"></button>
-        <button class="answers" id="4" onclick="checkAnswer('4')"></button>
-    </div>
-</div>
-</main>
-<!-- container for reset button on final page -->
-<div id="reset-page">
+    <header>
 
-</div>
-<!--FINAL PAGE-->
-<div id="#View high scores">
+        <h3 id="scores-link">High Scores</h3>
+        <title>Serial Killer Quiz</title>
+        <h3 id="timer"></h3>
 
-</div>
-    <!-- end screen-->    
-    <!-- container for you won vs you scored 0 -->    
-    <!-- input for name/intitals -->
-    <!--  save button -->
-    <!-- button to wipe the scores-->
-        <script src="script.js"></script>
-    </body>
+    </header>
+
+    <main>
+        <section class="play game">
+
+            <h2 id="info">Press Start to Play!!</h2>
+
+            <table></table>
+
+            <button id="start">Start!</button>
+
+            <ul id="options"></ul>
+            
+            <h3 id="assessment"></h3>
+
+        </section>
+
+    </main>
+
+    <script src="./assets/script.js"></script>
+
+</body>
 </html>
